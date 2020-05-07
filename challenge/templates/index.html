@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 4</title>
+	<script>
+		function veri() {
+			var num = document.forms["myForm"]["num"].value;
+			console.log(num);
+			if (num > 10 || num < 1){
+				alert('Please submit a number in (1,10)');
+				return false;
+			}
+			else{
+				document.getElementById("myForm").submit();
+			}
+		}
+	</script>
+</head>
+<body>
+	<form id="myForm" name="myForm" enctype="multipart/form-data" method="POST" action="/results">
+	<p name="p">Entre a number: <input type="text" name="num" maxlength = "2" /></p>
+
+	<input type="button" value="Get Square and Cube" onclick='veri()'>
+</form>
+
+
+
+</body>
+</html>

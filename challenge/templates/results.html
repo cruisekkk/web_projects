@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>problem 4</title>
+  <script>
+		function doub(a) {
+        return a*a;
+    }
+
+    function trip(a) {
+        return a*a*a;
+    }
+
+  </script> 
+</head>
+<body>
+  <h1>Output Sqaure and cube form 1 to {{num}}</h1>
+  <h2>
+
+  </h2>
+
+	<table border="0">
+    <tr>
+      <th>Number</th>
+      <th>Square</th>
+      <th>Cube</th>
+    </tr>
+    <tr>
+      
+    <!-- </tr> -->
+      {% for num in nums %}
+          <tr>
+            <td>{{num}}</td>
+            <td>{{num*num}}</td>
+            <td>{{num*num*num}}</td>
+          </tr>
+      {% endfor %}
+    </table>
+
+</body>
+</html>
